@@ -16,7 +16,7 @@ do
 res_file=`echo $file | awk -F "/" '{print $(NF-1)}'`
 echo $res_file
 echo $file
-cp $file $target_dir${res_file%.*}".png"
+cp $file $target_dir${res_file%.*}
 done
 
 
